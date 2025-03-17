@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proper Navigation Bar</title>
+    <style>
+        * { Font-family: sans-serif; }
+        nav {
+            background: green; 
+            width: 100%;
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 999;
+            display:flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            font-weight: bold;
+            color: greenyellow;
+            background: #333;
+            padding: 10px;
+            text-decoration: none;
+
+        }
+
+        nav a:hover { background: #777; }
+        main { padding-top: 3.5rem; }
+        body { background: lightblue; color: #111; }
+        footer { text-align: center; }
+
+        @media  (max-width: 768px) {
+            body { background: darkslategray; color: white; }
+            main { padding-top: 30vh; }
+            nav a { border: 1px solid white; 
+            text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body { background: linear-gradient (90deg, #00008b, #483d8b);  }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#top">Top</a>
+        <a href="#bot">Bottom</a>
+        <a href="#">Link 1 </a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <main id="top">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo, leo eu laoreet porta, est magna interdum velit, vitae tempor libero lacus et felis. Donec vitae mi eleifend justo pretium facilisis et et ex. Fusce ultrices eget eros at vestibulum. Nulla eleifend nisl ante, ut blandit ipsum dictum quis. Aenean eu lacus rutrum, suscipit quam eget, mattis neque. Donec imperdiet ac ante a scelerisque. Nam aliquam posuere pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas erat justo, cursus eu pretium in, vehicula tempor elit. Donec congue, quam non faucibus feugiat, diam turpis ornare odio, non finibus erat nisi at turpis. Duis sit amet nisl tincidunt, ornare lorem auctor, finibus felis. Sed finibus porta purus a tincidunt. Vivamus blandit elit et risus convallis dapibus.
+
+Nullam tempus euismod tellus, rhoncus vestibulum neque porttitor ut. Nulla quis nibh et orci vehicula porttitor. Cras vel justo lorem. Pellentesque sodales mauris sed ornare auctor. Vestibulum pellentesque lacinia congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis id interdum lacus. Nam tempus, lacus et laoreet mattis, ex diam scelerisque neque, quis varius tortor leo sit amet purus. Fusce in lorem imperdiet, ornare magna vitae, iaculis nunc. Maecenas at nisi erat.
+
+Donec fermentum metus et ante vestibulum volutpat. Quisque ultricies lorem nec quam consectetur tincidunt. Vestibulum molestie in nunc vitae rutrum. Phasellus mattis ipsum sed arcu blandit, et pharetra quam sodales. Donec laoreet, lorem sed congue laoreet, justo massa pellentesque libero, vel mattis mi nunc quis neque. Pellentesque arcu turpis, tristique a ligula id, tempus ornare ipsum. Praesent a venenatis purus. Nulla at eleifend enim. Suspendisse sed interdum diam. Maecenas bibendum ac erat id accumsan.
+
+Nam ultricies congue dolor, eu congue odio euismod eget. Morbi quis ligula ut lectus aliquam hendrerit. In nisl lorem, faucibus ac dolor sit amet, fermentum maximus felis. Proin blandit at enim quis dapibus. Nullam in tempus nibh, sit amet rhoncus enim. Pellentesque iaculis maximus nulla, id consectetur lorem ultricies non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla porta condimentum nisl, tincidunt tincidunt felis molestie vel. Proin condimentum lacus eu velit convallis vestibulum. Morbi finibus congue feugiat. Pellentesque posuere metus erat, posuere aliquam tortor egestas et. Ut congue mollis lectus nec viverra. Praesent porta justo at posuere egestas. Suspendisse potenti. Phasellus et consequat nibh, quis laoreet justo.
+
+Duis fringilla mi a risus lacinia, ut aliquam ex fringilla. Suspendisse potenti. Etiam nulla massa, egestas quis nisi sed, sodales semper enim. Vestibulum eu magna eleifend odio ultricies malesuada at vel odio. Duis sagittis vulputate turpis, id vulputate sem pellentesque nec. Integer tincidunt lorem nisl, nec consectetur arcu congue non. Nam sit amet nunc faucibus, suscipit enim a, scelerisque risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque pharetra mollis augue sed tempus. Donec rhoncus condimentum auctor. Suspendisse potenti. Phasellus scelerisque mauris in est ultrices lobortis.
+        </p>
+    </main>
+    <footer id="bot">
+        <b>This is the bottom of the page!</b>
+    </footer>
+</body>
+</html>

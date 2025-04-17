@@ -20,7 +20,7 @@
     function calc() {
         let car = document.getElementById("sl").value;
         let miles = 0;
-        let galoons = 0;
+        let gallons = 0;
         let mpg = 0;
 
         if (car == "1970 VW Bug") {
@@ -42,10 +42,17 @@
             gallons = 11;
         }
 
+
         mpg = miles / gallons;
         let out = document.getElementById('output');
         out.innerText = "MPG: " + mpg.tofixed(1);
+
+      
     }
 </script>
 </body>
 </html>
+
+
+
+

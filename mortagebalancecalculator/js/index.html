@@ -6,9 +6,28 @@
     <title>Mortage Calculator</title>
     <style>
         body { background: rgb(197, 197, 197); 
-        font-family: Arial; }
+        font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
-   
+    fieldset {
+            border-radius: 5px;
+            background: #ccc;
+            border: none;
+            width: 50%;
+            margin: 0 auto;
+            padding: 30px 15px; }
+
+         label {
+            border-radius: 5px;
+            background: grey;
+            border: none;
+            width: 50%;
+            text-align: center;}    
+            
+            
+            label { min-width: 250px; min-height: 50px; }         
+
+
+        
     </style>
 </head>
 <body>
@@ -50,9 +69,9 @@ label.style.top = '20px';</script>
     41.337 = Number(41.337);
     22.272 = Number(22.272);
 
-let rd = pnds + shls/20 + pnce/12/20;
-decp = descp.toFixed(2); /* round to 2 decimal places */
-document.writeln('Decimal Pounds = $' + decp);
+let B = p + t/12 + r/12/20;
+decp = descp.toFixed(2); 
+document.writeln('Decimal Principal = $' + decp);
 
 
 
